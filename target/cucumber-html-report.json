@@ -1,0 +1,222 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2019-06-09T02:18:05.740Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4675048419,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CreateAccountSteps.before(Scenario)"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Valid account",
+        "description": "",
+        "id": "create-account;valid-account;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2262937575,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I accessed the registration page",
+            "match": {
+              "location": "CreateAccountSteps.registrationPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3427343212,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "register myself as \"Jonatas\" lastname \"Kirsch\" email \"test{random}@mailcatch.com\" phone number \"1185859696\" password \"159753\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Jonatas\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"Kirsch\"",
+                  "offset": 38
+                },
+                {
+                  "val": "\"test{random}@mailcatch.com\"",
+                  "offset": 53
+                },
+                {
+                  "val": "\"1185859696\"",
+                  "offset": 95
+                },
+                {
+                  "val": "\"159753\"",
+                  "offset": 117
+                }
+              ],
+              "location": "CreateAccountSteps.registerAccount(String,String,String,String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2403556,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "system should save the registration",
+            "match": {
+              "location": "CreateAccountSteps.systemShouldSaveRegistration()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Automation"
+          },
+          {
+            "name": "@Client"
+          },
+          {
+            "name": "@CreateAccount"
+          }
+        ]
+      }
+    ],
+    "name": "Create account",
+    "description": "  Register a new account",
+    "id": "create-account",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/create_account/test_cases/CreateAccount.feature",
+    "tags": [
+      {
+        "name": "@Automation",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@Client",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 13
+        }
+      },
+      {
+        "name": "@CreateAccount",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 21
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2019-06-09T02:18:16.123Z",
+        "line": 12,
+        "name": "Valid login",
+        "description": "",
+        "id": "login;valid-login;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5935641151,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I accessed the login page",
+            "match": {
+              "location": "Login.oUsuarioAcessouAPaginaDeLogin()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4017639205,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I type the email \"test.registration@mailcatch.com\" password \"123456\" and click the login button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"test.registration@mailcatch.com\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"123456\"",
+                  "offset": 60
+                }
+              ],
+              "location": "Login.digitarOEmailEASenha(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 144775,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "system should open the My Account page",
+            "match": {
+              "location": "Login.systemShouldOpenMyAccount()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Automation"
+          },
+          {
+            "name": "@Login"
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "  Login of user in the system",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/login/test_cases/Login.feature",
+    "tags": [
+      {
+        "name": "@Automation",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@Login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 13
+        }
+      }
+    ]
+  }
+]
